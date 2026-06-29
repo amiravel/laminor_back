@@ -121,6 +121,7 @@ class ComposerStaticInit36793882908b6cbdd344b5a4840231db
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Modules\\' => 8,
             'Mockery\\' => 8,
         ),
         'L' => 
@@ -349,8 +350,8 @@ class ComposerStaticInit36793882908b6cbdd344b5a4840231db
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -382,12 +383,16 @@ class ComposerStaticInit36793882908b6cbdd344b5a4840231db
         ),
         'Nette\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nette/utils/src',
-            1 => __DIR__ . '/..' . '/nette/schema/src',
+            0 => __DIR__ . '/..' . '/nette/schema/src',
+            1 => __DIR__ . '/..' . '/nette/utils/src',
         ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Modules\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules',
         ),
         'Mockery\\' => 
         array (
@@ -395,8 +400,8 @@ class ComposerStaticInit36793882908b6cbdd344b5a4840231db
         ),
         'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/uri-interfaces',
-            1 => __DIR__ . '/..' . '/league/uri',
+            0 => __DIR__ . '/..' . '/league/uri',
+            1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -539,9 +544,17 @@ class ComposerStaticInit36793882908b6cbdd344b5a4840231db
     );
 
     public static $classMap = array (
+        'App\\Filters\\BaseFilter' => __DIR__ . '/../..' . '/app/Filters/BaseFilter.php',
+        'App\\Filters\\BaseFilterInterface' => __DIR__ . '/../..' . '/app/Filters/BaseFilterInterface.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Repositories\\BaseRepository' => __DIR__ . '/../..' . '/app/Repositories/BaseRepository.php',
+        'App\\Repositories\\BaseRepositoryInterface' => __DIR__ . '/../..' . '/app/Repositories/BaseRepositoryInterface.php',
+        'App\\Rules\\PhoneNumber' => __DIR__ . '/../..' . '/app/Rules/PhoneNumber.php',
+        'App\\Services\\BaseService' => __DIR__ . '/../..' . '/app/Services/BaseService.php',
+        'App\\Services\\BaseServiceInterface' => __DIR__ . '/../..' . '/app/Services/BaseServiceInterface.php',
+        'App\\Utilities\\Response\\Response' => __DIR__ . '/../..' . '/app/Utilities/Response/Response.php',
+        'App\\Utilities\\Response\\ResponseInterface' => __DIR__ . '/../..' . '/app/Utilities/Response/ResponseInterface.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
@@ -3781,6 +3794,12 @@ class ComposerStaticInit36793882908b6cbdd344b5a4840231db
         'Mockery\\Undefined' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Undefined.php',
         'Mockery\\VerificationDirector' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationDirector.php',
         'Mockery\\VerificationExpectation' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationExpectation.php',
+        'Modules\\Users\\App\\Models\\User' => __DIR__ . '/../..' . '/modules/Users/App/Models/User.php',
+        'Modules\\Users\\App\\Providers\\FilterServiceProvider' => __DIR__ . '/../..' . '/modules/Users/App/Providers/FilterServiceProvider.php',
+        'Modules\\Users\\App\\Providers\\RepositoryServiceProvider' => __DIR__ . '/../..' . '/modules/Users/App/Providers/RepositoryServiceProvider.php',
+        'Modules\\Users\\App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/modules/Users/App/Providers/RouteServiceProvider.php',
+        'Modules\\Users\\App\\Providers\\ServicesServiceProvider' => __DIR__ . '/../..' . '/modules/Users/App/Providers/ServicesServiceProvider.php',
+        'Modules\\Users\\App\\Providers\\UsersServiceProvider' => __DIR__ . '/../..' . '/modules/Users/App/Providers/UsersServiceProvider.php',
         'Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/AsMonologProcessor.php',
         'Monolog\\Attribute\\WithMonologChannel' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/WithMonologChannel.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',

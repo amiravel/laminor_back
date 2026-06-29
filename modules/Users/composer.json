@@ -1,0 +1,24 @@
+{
+  "name": "laminor/Users",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Modules\\Users\\App": "App/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Users\\Test": "Tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "amir",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
